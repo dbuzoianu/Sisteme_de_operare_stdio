@@ -32,6 +32,9 @@
 
 struct _so_file {
 	int fd;			/* File descriptor */
+	unsigned char buff[4096];
+	int buff_pointer;
+	int caract_citite;
 };
 
 typedef struct _so_file SO_FILE;
